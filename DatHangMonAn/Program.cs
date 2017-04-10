@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DatHangMonAn.DanhMuc;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace DatHangMonAn
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Frm_Main());
+            Application.Run(new Frm_KhachHang());
         }
     }
 }

@@ -56,9 +56,9 @@ namespace DatHangMonAn
 
         private void btn_khachhang_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Frm_KhachHang khachhang = new Frm_KhachHang();
-            khachhang.MdiParent = this;
-            khachhang.Show();
+            Frm_KH _khachHang = new Frm_KH();
+            _khachHang.MdiParent = this;
+            _khachHang.Show();
         }
 
         private void btn_nhanvien_ItemClick(object sender, ItemClickEventArgs e)

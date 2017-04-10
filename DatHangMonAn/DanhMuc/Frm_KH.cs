@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace DatHangMonAn.HeThong
+namespace DatHangMonAn.DanhMuc
 {
-    public partial class Frm_DoiMatKhau : Form
+    public partial class Frm_KH : Form
     {
-        public Frm_DoiMatKhau()
+        public Frm_KH()
         {
             InitializeComponent();
-        }
-
-        private void Frm_DoiMatKhau_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

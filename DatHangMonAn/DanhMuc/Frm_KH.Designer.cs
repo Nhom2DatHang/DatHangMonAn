@@ -1,6 +1,6 @@
 ﻿namespace DatHangMonAn.DanhMuc
 {
-    partial class Frm_KhachHang
+    partial class Frm_KH
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_KhachHang));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_KH));
             this.dgvdskhachhang = new System.Windows.Forms.DataGridView();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnthem = new System.Windows.Forms.ToolStripButton();
-            this.btnsua = new System.Windows.Forms.ToolStripButton();
-            this.btnxoa = new System.Windows.Forms.ToolStripButton();
-            this.btnthoat = new System.Windows.Forms.ToolStripButton();
             this.colstt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colmakh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coltenct = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +42,11 @@
             this.colemail = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colcmnd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coldelete = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.btnthem = new System.Windows.Forms.ToolStripButton();
+            this.btnsua = new System.Windows.Forms.ToolStripButton();
+            this.btnxoa = new System.Windows.Forms.ToolStripButton();
+            this.btnthoat = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dgvdskhachhang)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -84,53 +84,8 @@
             this.dgvdskhachhang.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvdskhachhang.RowTemplate.Height = 26;
             this.dgvdskhachhang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvdskhachhang.Size = new System.Drawing.Size(910, 363);
-            this.dgvdskhachhang.TabIndex = 3;
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnthem,
-            this.btnsua,
-            this.btnxoa,
-            this.btnthoat});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(910, 25);
-            this.toolStrip1.TabIndex = 2;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnthem
-            // 
-            this.btnthem.Image = ((System.Drawing.Image)(resources.GetObject("btnthem.Image")));
-            this.btnthem.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(59, 22);
-            this.btnthem.Text = "Thêm";
-            // 
-            // btnsua
-            // 
-            this.btnsua.Image = ((System.Drawing.Image)(resources.GetObject("btnsua.Image")));
-            this.btnsua.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(50, 22);
-            this.btnsua.Text = "Sửa";
-            // 
-            // btnxoa
-            // 
-            this.btnxoa.Image = ((System.Drawing.Image)(resources.GetObject("btnxoa.Image")));
-            this.btnxoa.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(48, 22);
-            this.btnxoa.Text = "Xóa";
-            // 
-            // btnthoat
-            // 
-            this.btnthoat.Image = ((System.Drawing.Image)(resources.GetObject("btnthoat.Image")));
-            this.btnthoat.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnthoat.Name = "btnthoat";
-            this.btnthoat.Size = new System.Drawing.Size(58, 22);
-            this.btnthoat.Text = "Thoát";
+            this.dgvdskhachhang.Size = new System.Drawing.Size(710, 268);
+            this.dgvdskhachhang.TabIndex = 5;
             // 
             // colstt
             // 
@@ -193,15 +148,60 @@
             this.coldelete.TrueValue = "1";
             this.coldelete.Width = 50;
             // 
-            // Frm_KhachHang
+            // toolStrip1
+            // 
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.btnthem,
+            this.btnsua,
+            this.btnxoa,
+            this.btnthoat});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(710, 25);
+            this.toolStrip1.TabIndex = 4;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // btnthem
+            // 
+            this.btnthem.Image = ((System.Drawing.Image)(resources.GetObject("btnthem.Image")));
+            this.btnthem.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthem.Name = "btnthem";
+            this.btnthem.Size = new System.Drawing.Size(59, 22);
+            this.btnthem.Text = "Thêm";
+            // 
+            // btnsua
+            // 
+            this.btnsua.Image = ((System.Drawing.Image)(resources.GetObject("btnsua.Image")));
+            this.btnsua.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnsua.Name = "btnsua";
+            this.btnsua.Size = new System.Drawing.Size(50, 22);
+            this.btnsua.Text = "Sửa";
+            // 
+            // btnxoa
+            // 
+            this.btnxoa.Image = ((System.Drawing.Image)(resources.GetObject("btnxoa.Image")));
+            this.btnxoa.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnxoa.Name = "btnxoa";
+            this.btnxoa.Size = new System.Drawing.Size(48, 22);
+            this.btnxoa.Text = "Xóa";
+            // 
+            // btnthoat
+            // 
+            this.btnthoat.Image = ((System.Drawing.Image)(resources.GetObject("btnthoat.Image")));
+            this.btnthoat.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnthoat.Name = "btnthoat";
+            this.btnthoat.Size = new System.Drawing.Size(58, 22);
+            this.btnthoat.Text = "Thoát";
+            // 
+            // Frm_KH
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 388);
+            this.ClientSize = new System.Drawing.Size(710, 293);
             this.Controls.Add(this.dgvdskhachhang);
             this.Controls.Add(this.toolStrip1);
-            this.Name = "Frm_KhachHang";
-            this.Text = "Frm_KhachHang";
+            this.Name = "Frm_KH";
+            this.Text = "Frm_KH";
             ((System.ComponentModel.ISupportInitialize)(this.dgvdskhachhang)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -213,11 +213,6 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvdskhachhang;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton btnthem;
-        private System.Windows.Forms.ToolStripButton btnsua;
-        private System.Windows.Forms.ToolStripButton btnxoa;
-        private System.Windows.Forms.ToolStripButton btnthoat;
         private System.Windows.Forms.DataGridViewTextBoxColumn colstt;
         private System.Windows.Forms.DataGridViewTextBoxColumn colmakh;
         private System.Windows.Forms.DataGridViewTextBoxColumn coltenct;
@@ -226,7 +221,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colemail;
         private System.Windows.Forms.DataGridViewTextBoxColumn colcmnd;
         private System.Windows.Forms.DataGridViewCheckBoxColumn coldelete;
-
-
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton btnthem;
+        private System.Windows.Forms.ToolStripButton btnsua;
+        private System.Windows.Forms.ToolStripButton btnxoa;
+        private System.Windows.Forms.ToolStripButton btnthoat;
     }
 }

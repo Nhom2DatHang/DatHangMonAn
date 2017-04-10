@@ -163,14 +163,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bussiness\BLL_KhachHang.cs" />
     <Compile Include="Bussiness\BLL_PhanQuyen.cs" />
     <Compile Include="cls_DataLayer.cs" />
     <Compile Include="Cls_Main.cs" />
+    <Compile Include="DanhMuc\Frm_KH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KH.Designer.cs">
+      <DependentUpon>Frm_KH.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhMuc\Frm_KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanhMuc\Frm_KhachHang.Designer.cs">
       <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHangThem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHangThem.Designer.cs">
+      <DependentUpon>Frm_KhachHangThem.cs</DependentUpon>
     </Compile>
     <Compile Include="DanhMuc\Frm_NhanVien.cs">
       <SubType>Form</SubType>
@@ -178,6 +191,7 @@
     <Compile Include="DanhMuc\Frm_NhanVien.Designer.cs">
       <DependentUpon>Frm_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\DTO_KhachHang.cs" />
     <Compile Include="DTO\DTO_PhanQuyen.cs" />
     <Compile Include="Form_VD.cs">
       <SubType>Form</SubType>
@@ -239,8 +253,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DanhMuc\Frm_KH.resx">
+      <DependentUpon>Frm_KH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\Frm_KhachHang.resx">
       <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_KhachHangThem.resx">
+      <DependentUpon>Frm_KhachHangThem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_VD.resx">
       <DependentUpon>Form_VD.cs</DependentUpon>
