@@ -103,7 +103,8 @@ namespace DatHangMonAn
 
         private void btnthoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Frm_Main main = new Frm_Main();
+            main.Show();
         }
     }
 }

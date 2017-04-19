@@ -41,7 +41,7 @@
             this.btnthoat = new System.Windows.Forms.ToolStripButton();
             this.colstt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colmakh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.coltenct = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coltenkh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coldiachi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colsodienthoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colemail = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,7 +70,7 @@
             this.dgvdskhachhang.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colstt,
             this.colmakh,
-            this.coltenct,
+            this.coltenkh,
             this.coldiachi,
             this.colsodienthoai,
             this.colemail,
@@ -86,6 +86,7 @@
             this.dgvdskhachhang.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvdskhachhang.Size = new System.Drawing.Size(910, 363);
             this.dgvdskhachhang.TabIndex = 3;
+            this.dgvdskhachhang.Click += new System.EventHandler(this.dgvdskhachhang_Click);
             // 
             // toolStrip1
             // 
@@ -107,6 +108,7 @@
             this.btnthem.Name = "btnthem";
             this.btnthem.Size = new System.Drawing.Size(59, 22);
             this.btnthem.Text = "Thêm";
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // btnsua
             // 
@@ -115,6 +117,7 @@
             this.btnsua.Name = "btnsua";
             this.btnsua.Size = new System.Drawing.Size(50, 22);
             this.btnsua.Text = "Sửa";
+            this.btnsua.Click += new System.EventHandler(this.btnsua_Click);
             // 
             // btnxoa
             // 
@@ -123,6 +126,7 @@
             this.btnxoa.Name = "btnxoa";
             this.btnxoa.Size = new System.Drawing.Size(48, 22);
             this.btnxoa.Text = "Xóa";
+            this.btnxoa.Click += new System.EventHandler(this.btnxoa_Click);
             // 
             // btnthoat
             // 
@@ -131,6 +135,7 @@
             this.btnthoat.Name = "btnthoat";
             this.btnthoat.Size = new System.Drawing.Size(58, 22);
             this.btnthoat.Text = "Thoát";
+            this.btnthoat.Click += new System.EventHandler(this.btnthoat_Click);
             // 
             // colstt
             // 
@@ -149,13 +154,13 @@
             this.colmakh.Name = "colmakh";
             this.colmakh.ReadOnly = true;
             // 
-            // coltenct
+            // coltenkh
             // 
-            this.coltenct.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.coltenct.DataPropertyName = "TenKH";
-            this.coltenct.HeaderText = "Tên Khách Hàng";
-            this.coltenct.Name = "coltenct";
-            this.coltenct.ReadOnly = true;
+            this.coltenkh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.coltenkh.DataPropertyName = "TenKH";
+            this.coltenkh.HeaderText = "Tên Khách Hàng";
+            this.coltenkh.Name = "coltenkh";
+            this.coltenkh.ReadOnly = true;
             // 
             // coldiachi
             // 
@@ -177,12 +182,14 @@
             this.colemail.DataPropertyName = "Email";
             this.colemail.HeaderText = "Email";
             this.colemail.Name = "colemail";
+            this.colemail.Width = 120;
             // 
             // colcmnd
             // 
             this.colcmnd.DataPropertyName = "CMND";
             this.colcmnd.HeaderText = "CMND";
             this.colcmnd.Name = "colcmnd";
+            this.colcmnd.Width = 120;
             // 
             // coldelete
             // 
@@ -202,6 +209,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Name = "Frm_KhachHang";
             this.Text = "Frm_KhachHang";
+            this.Load += new System.EventHandler(this.Frm_KhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvdskhachhang)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -220,7 +228,7 @@
         private System.Windows.Forms.ToolStripButton btnthoat;
         private System.Windows.Forms.DataGridViewTextBoxColumn colstt;
         private System.Windows.Forms.DataGridViewTextBoxColumn colmakh;
-        private System.Windows.Forms.DataGridViewTextBoxColumn coltenct;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coltenkh;
         private System.Windows.Forms.DataGridViewTextBoxColumn coldiachi;
         private System.Windows.Forms.DataGridViewTextBoxColumn colsodienthoai;
         private System.Windows.Forms.DataGridViewTextBoxColumn colemail;

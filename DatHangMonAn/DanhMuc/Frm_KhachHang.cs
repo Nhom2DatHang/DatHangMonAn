@@ -38,10 +38,6 @@ namespace DatHangMonAn.DanhMuc
             _frmKhachHang.them = true;
             _frmKhachHang.ShowDialog();
             HienThiDanhSachKhachHang();
-
-
-
-
         }
 
         private void Frm_KhachHang_Load(object sender, EventArgs e)
@@ -64,7 +60,7 @@ namespace DatHangMonAn.DanhMuc
                 _khachHang.Email = dgvdskhachhang.CurrentRow.Cells["colemail"].Value.ToString();
                 _khachHang.TenKH = dgvdskhachhang.CurrentRow.Cells["coltenkh"].Value.ToString();
                 _khachHang.DiaChiKH = dgvdskhachhang.CurrentRow.Cells["coldiachi"].Value.ToString();
-                _khachHang.CMND = Convert.ToInt32(dgvdskhachhang.CurrentRow.Cells["colcmnd"]);
+                //_khachHang.CMND = Convert.ToInt32(dgvdskhachhang.CurrentRow.Cells["colcmnd"]);
                 _khachHang.SoDienThoai = dgvdskhachhang.CurrentRow.Cells["colsodienthoai"].Value.ToString();
 
             }
@@ -73,11 +69,14 @@ namespace DatHangMonAn.DanhMuc
         {
             return bd.XoaThongTinKhachHang(ref err, _khachHang);
         }
+
+        int sodong = 0;
         private void btnxoa_Click(object sender, EventArgs e)
         {
+            int dem = 0;
             for (int i = dgvdskhachhang.Rows.Count - 1; i >= 0; i--)
             {
-                if (dgvdskhachhang.Rows[i].Cells["colxoa"].Value.ToString() == "1")
+                if (dgvdskhachhang.Rows[i].Cells["coldelete"].Value.ToString() == "1")
                 {
                     _khachHang = new DTO_KhachHang();
                     _khachHang.MaKH = dgvdskhachhang.Rows[i].Cells["colmakh"].Value.ToString();
