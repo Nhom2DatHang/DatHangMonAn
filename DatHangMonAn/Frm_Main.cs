@@ -38,12 +38,14 @@ namespace DatHangMonAn
         private void btn_saoluu_ItemClick(object sender, ItemClickEventArgs e)
         {
             Frm_SaoLuuPhucHoi saoluu = new Frm_SaoLuuPhucHoi();
+            saoluu.saoluu = false;
             saoluu.ShowDialog();
         }
 
         private void bnt_phuchoi_ItemClick(object sender, ItemClickEventArgs e)
         {
             Frm_SaoLuuPhucHoi saoluu = new Frm_SaoLuuPhucHoi();
+            saoluu.saoluu = false;
             saoluu.ShowDialog();
         }
 
@@ -56,9 +58,9 @@ namespace DatHangMonAn
 
         private void btn_khachhang_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Frm_KhachHang khachhang = new Frm_KhachHang();
-            khachhang.MdiParent = this;
-            khachhang.Show();
+            Frm_KhachHang _khachHang = new Frm_KhachHang();
+            _khachHang.MdiParent = this;
+            _khachHang.Show();
         }
 
         private void btn_nhanvien_ItemClick(object sender, ItemClickEventArgs e)

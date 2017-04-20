@@ -83,6 +83,7 @@
     <Reference Include="DevExpress.XtraGauges.v15.1.Core, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
+    <Reference Include="DevExpress.XtraGrid.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraLayout.v15.1, Version=15.1.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a">
       <Private>True</Private>
     </Reference>
@@ -163,14 +164,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bussiness\BLL_KhachHang.cs" />
+    <Compile Include="Bussiness\BLL_MonAn.cs" />
     <Compile Include="Bussiness\BLL_PhanQuyen.cs" />
+    <Compile Include="Bussiness\BLL_SaoLuuPhucHoi.cs" />
     <Compile Include="cls_DataLayer.cs" />
     <Compile Include="Cls_Main.cs" />
+    <Compile Include="DanhMuc\Frm_KH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KH.Designer.cs">
+      <DependentUpon>Frm_KH.cs</DependentUpon>
+    </Compile>
     <Compile Include="DanhMuc\Frm_KhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DanhMuc\Frm_KhachHang.Designer.cs">
       <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHangThem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DanhMuc\Frm_KhachHangThem.Designer.cs">
+      <DependentUpon>Frm_KhachHangThem.cs</DependentUpon>
     </Compile>
     <Compile Include="DanhMuc\Frm_NhanVien.cs">
       <SubType>Form</SubType>
@@ -178,12 +194,20 @@
     <Compile Include="DanhMuc\Frm_NhanVien.Designer.cs">
       <DependentUpon>Frm_NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\DTO_KhachHang.cs" />
+    <Compile Include="DTO\DTO_MonAn.cs" />
     <Compile Include="DTO\DTO_PhanQuyen.cs" />
     <Compile Include="Form_VD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form_VD.Designer.cs">
       <DependentUpon>Form_VD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frm_Login.Designer.cs">
+      <DependentUpon>Frm_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_ThietLapKetNoi.cs">
       <SubType>Form</SubType>
@@ -239,8 +263,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>XRDesignRibbonControllerResources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DanhMuc\Frm_KH.resx">
+      <DependentUpon>Frm_KH.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DanhMuc\Frm_KhachHang.resx">
       <DependentUpon>Frm_KhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DanhMuc\Frm_KhachHangThem.resx">
+      <DependentUpon>Frm_KhachHangThem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_VD.resx">
       <DependentUpon>Form_VD.cs</DependentUpon>
@@ -274,6 +304,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TacVu\Frm_DatMon.resx">
+      <DependentUpon>Frm_DatMon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="XRDesignRibbonControllerResources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>XRDesignRibbonControllerResources.Designer.cs</LastGenOutput>

@@ -16,5 +16,10 @@ namespace DatHangMonAn.HeThong
         {
             InitializeComponent();
         }
+
+        private void Frm_DoiMatKhau_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

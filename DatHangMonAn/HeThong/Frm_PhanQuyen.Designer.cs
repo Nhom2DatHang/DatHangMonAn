@@ -123,7 +123,6 @@
             this.btnthem.TabIndex = 15;
             this.btnthem.Text = "Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
-            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // label2
             // 

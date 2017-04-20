@@ -268,7 +268,7 @@
             this.ribbonPage3,
             this.ribbonPage4});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.Office2013;
-            this.ribbonControl1.Size = new System.Drawing.Size(940, 182);
+            this.ribbonControl1.Size = new System.Drawing.Size(940, 178);
             // 
             // imageCollection1
             // 
@@ -322,6 +322,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(940, 558);
             this.Controls.Add(this.ribbonControl1);
+            this.DoubleBuffered = false;
             this.IsMdiContainer = true;
             this.Name = "Frm_Main";
             this.Ribbon = this.ribbonControl1;

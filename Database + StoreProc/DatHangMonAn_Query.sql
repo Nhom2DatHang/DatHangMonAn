@@ -48,5 +48,16 @@ values ('NV06', N'Nguyễn Vũ Duy', 'Nam', N'Vũng Tàu', '01692235864', 'admin
 update NhanVien set MatKhau = PWDENCRYPT('123456') where TaiKhoan != 'admin'
 go
 
-
+create proc [dbo].[SP_SaoLuuDuLieu]
+@duongdan nvarchar(max)
+as
+begin
+	declare @dbname nvarchar(50)
+	set @dbname =  DB_NAME()
+	BACKUP DATABASE @dbname
+	TO  DISK = @duongdan
+	WITH NOFORMAT, NOINIT,  
+	SKIP, NOREWIND, NOUNLOAD,  STATS = 10
+	select ErrorCode = 1
+end
 

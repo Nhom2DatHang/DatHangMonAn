@@ -79,10 +79,5 @@ namespace DatHangMonAn.HeThong
             }
         }
 
-        private void btnthem_Click(object sender, EventArgs e)
-        {
-
-        }
-
     }
 }

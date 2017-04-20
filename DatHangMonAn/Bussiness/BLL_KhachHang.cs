@@ -19,7 +19,6 @@ namespace DatHangMonAn.Bussiness
             data = new cls_DataLayer(path);
         }
         public object GetValue(ref string err)
-        
         {
             return data.GetValue(ref err, "sp_KhachHang_SelectIDMax", CommandType.StoredProcedure, null);
         }
@@ -34,7 +33,7 @@ namespace DatHangMonAn.Bussiness
         }
         public bool LuuThongTinKhachHang(ref string err, DTO_KhachHang _khachHang)
         {
-            return data.MyExcuteNonQuery(ref err, "sp_KhachHang_Inser_Update", CommandType.StoredProcedure
+            return data.MyExcuteNonQuery(ref err, "sp_KhachHang_Them_Sua", CommandType.StoredProcedure
                 , new SqlParameter("@MaKH", _khachHang.MaKH)
                 , new SqlParameter("@TenKH", _khachHang.TenKH)
                 , new SqlParameter("@DiaChiKH", _khachHang.DiaChiKH)

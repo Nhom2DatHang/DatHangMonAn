@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace DatHangMonAn.DTO
 {
-    class DTO_KhachHang
+    public class DTO_KhachHang
     {
-        string maKH, tenKH, diaChiKH, sdtKH, email, cMND;
+        string maKH, tenKH, diaChiKH, sdtKH, email;
+        int cMND;
 
-        public string CMND
+        public int CMND
         {
             get { return cMND; }
             set { cMND = value; }
