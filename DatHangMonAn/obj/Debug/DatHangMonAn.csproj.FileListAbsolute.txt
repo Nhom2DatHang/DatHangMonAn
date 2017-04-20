@@ -704,6 +704,9 @@ E:\DatHangMonAn\DatHangMonAn\bin\Debug\ru\DevExpress.XtraVerticalGrid.v15.1.reso
 E:\DatHangMonAn\DatHangMonAn\obj\Debug\DatHangMonAn.exe
 E:\DatHangMonAn\DatHangMonAn\obj\Debug\DatHangMonAn.pdb
 E:\DatHangMonAn\DatHangMonAn\obj\Debug\DatHangMonAn.csprojResolveAssemblyReference.cache
+<<<<<<< HEAD
 D:\BT\C# - CSDL\Github\DatHangMonAn\DatHangMonAn\DatHangMonAn\obj\Debug\DatHangMonAn.DanhMuc.Frm_KH.resources
 D:\BT\C# - CSDL\Github\DatHangMonAn\DatHangMonAn\DatHangMonAn\obj\Debug\DatHangMonAn.DanhMuc.Frm_KhachHangThem.resources
 D:\BT\C# - CSDL\Github\DatHangMonAn\DatHangMonAn\DatHangMonAn\obj\Debug\DatHangMonAn.TacVu.Frm_DatMon.resources
+=======
+>>>>>>> origin/master

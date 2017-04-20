@@ -165,7 +165,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bussiness\BLL_KhachHang.cs" />
+<<<<<<< HEAD
     <Compile Include="Bussiness\BLL_MonAn.cs" />
+=======
+>>>>>>> origin/master
     <Compile Include="Bussiness\BLL_PhanQuyen.cs" />
     <Compile Include="Bussiness\BLL_SaoLuuPhucHoi.cs" />
     <Compile Include="cls_DataLayer.cs" />
@@ -195,7 +198,10 @@
       <DependentUpon>Frm_NhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\DTO_KhachHang.cs" />
+<<<<<<< HEAD
     <Compile Include="DTO\DTO_MonAn.cs" />
+=======
+>>>>>>> origin/master
     <Compile Include="DTO\DTO_PhanQuyen.cs" />
     <Compile Include="Form_VD.cs">
       <SubType>Form</SubType>
